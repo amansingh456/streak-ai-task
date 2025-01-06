@@ -6,4 +6,6 @@
 4. come one step back and go to server repo
 5. run the backend server -> `go run main.go`
 
-#Screenshots
+# Screenshots
+![](https://github.com/amansingh456/streak-ai-task/blob/main/Screenshot1)
+![](https://github.com/amansingh456/streak-ai-task/blob/main/Screenshot2)
