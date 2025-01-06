@@ -1,0 +1,112 @@
+body {
+  color: white;
+  background-color: #282828;
+}
+
+.nav {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-gap: 2px;
+  height: 80%;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+}
+
+.tile {
+  width: 22px;
+  height: 22px;
+  background-color: rgb(182, 184, 184);
+  border-radius: 6px;
+  gap: 2;
+  margin: auto;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.btns {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 6px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: large;
+}
+
+.get {
+  background-color: green;
+}
+
+.reset {
+  background-color: rgb(86, 86, 229);
+}
+
+.result {
+  background-color: chocolate;
+}
+
+.route {
+  background-color: blue;
+  border: 1px solid white;
+  animation: shakeEffect 0.9s infinite;
+  opacity: 1;
+}
+
+.start {
+  background-color: yellowgreen !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+.end {
+  background-color: red !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+
+
+@keyframes shakeEffect {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-2px, -2px);
+  }
+
+  50% {
+    transform: translate(2px, 2px);
+  }
+
+  75% {
+    transform: translate(-2px, 2px);
+  }
+}
